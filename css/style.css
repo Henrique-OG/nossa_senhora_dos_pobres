@@ -1,0 +1,395 @@
+@charset "UTF-8";
+
+:root {
+    --botoes: #dfbb89;
+    --cor_secundaria: #415165;
+    --fundo_principal: #ffff ;
+    --textos_secundarios: #4b4033;
+    --textos_principais: #eaeef0;
+    --fundo_secundario: #f2f9ff;
+    --fundo_3: #e2e4e6;
+    --fundo_emojis: #586b81;
+}
+
+body {
+    background-color: var(--fundo_3);
+    color: var(--textos_secundarios);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--textos_principais);
+    font-size: 43px;
+    margin: 10px 0;
+    line-height: 1.3;
+}
+
+h2 {
+    color: var(--textos_secundarios);
+    font-size: 32px;
+    margin: 0;
+}
+
+header {
+    background-color: var(--cor_secundaria);
+    color: var(--textos_principais);
+    padding: 15px;
+
+}
+
+nav a:hover {
+    color: var(--botoes);
+}
+
+.botao_contato a:hover {
+    color: var(--botoes);
+    background-color: var(--cor_secundaria);
+    border: solid 1px var(--botoes);
+    
+}
+
+.conteiner, .conteiner_menus, .conteiner_fundo_secundario {
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.conteiner {
+    background-color: var(--fundo_principal);
+}
+
+.conteiner_fundo_secundario {
+    background-color: var(--fundo_secundario);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--fundo_principal);
+    margin-right: 15px ;
+}
+
+.ativo {
+    color: var(--botoes);
+}
+
+.botao_contato a {
+    color: var(--textos_principais);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 15px;
+    background-color: var(--botoes);
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.banner { 
+    position: relative;
+    overflow: hidden;
+    max-height: 700px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 900px;
+}
+
+.texto_banner {
+    position: absolute;
+    top: 25%;
+    margin: auto 50px;
+    width: 40%;
+    max-width: 506px;
+}
+
+.texto_complemento {
+    font-size: 20px;
+    margin: 0;
+    color: var(--botoes);
+}
+
+.texto_linha {
+    display: flex;
+}
+
+.linha {
+    height: 4px;
+    background-color: var(--botoes);
+    width: 30%;
+    margin: auto 10px;
+}
+
+.banner_p {
+    color: var(--textos_principais);
+    font-size: 18px;
+    margin: 0;
+}
+
+.botoes {
+    margin-top: 30px;
+}
+
+.botao {
+    color: var(--textos_principais);
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: var(--botoes);
+    border-radius: 10px;
+}
+
+.botao:hover {
+    color: var(--botoes);
+    border: solid 1px var(--botoes);
+    background-color: var(--cor_secundaria);
+    padding: 4px 19px ;
+}
+
+.texto_sobre_nos {
+    padding: 20px;
+    width: 55%;
+}
+
+.texto_sobre_nos p {
+    text-indent: 30px;
+    color: var(--textos_secundarios);
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 2px;
+}
+
+.linha_titulos {
+    height: 5px;
+    background-color: var(--botoes);
+    width: 20%;
+    margin: 10px 0;
+}
+
+.imagem_sobre_nos {
+    margin:  auto;
+    text-align: center;
+}
+
+.imagem_sobre_nos img {
+    margin-top: 70px;
+    padding-bottom: 30px;
+}
+
+.texto_centralizado {
+    margin: 30px auto;
+    text-align: center;
+    width: 40%;
+}
+
+.linha_titulos_centro {
+    height: 4px;
+    background-color: var(--botoes);
+    width: 60%;
+    margin: 10px auto;
+}
+
+.conteudo {
+    width: 100%;
+}
+
+.cards_pastoral {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card_musica, .card_saude, .card_liturgia {
+    width: 30%;
+    max-height: 320px;
+    max-width: 400px;
+    display: block;
+    position: relative;
+}
+
+.card_musica img, .card_saude img, .card_liturgia img{
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+}
+
+.card_musica h3 {
+    position: absolute;
+    top: 80px;
+    right: 25%;
+    font-size: 25px;
+}
+
+.card_liturgia h3 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 28px;
+}
+
+.card_liturgia p {
+    text-align: center;
+    position: absolute;
+    top: 120px;
+    right: 15%;
+    width: 50%;
+    font-size: 23px;
+}
+
+.card_saude h3 {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    font-size: 28px;
+}
+
+.card_saude p {
+    text-align: center;
+    position: absolute;
+    top: 140px;
+    right: 8%;
+    width: 50%;
+    font-size: 23px;
+}
+
+.card_musica p {
+    width: 50%;
+    right: 10%;
+    font-size: 20px;
+    line-height: 1.5;
+    position: absolute;
+    top: 120px;
+}
+
+.acessar_pastorais {
+    color: var(--fundo_principal);
+    text-align: center;
+    margin: 40px 0;
+}
+
+.acessar_pastorais a {
+    background-color: var(--botoes);
+    padding: 7px 20%;
+    border-radius: 10px;
+    color: var(--fundo_principal);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.acessar_pastorais a:hover {
+    color: var(--botoes);
+    background-color: var(--fundo_secundario);
+    border: solid 1px var(--botoes);
+}
+
+.cards_horarios_missas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+
+}
+
+.card_horario_missa {
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 7px;
+    border: solid 1px var(--cor_secundaria);
+    padding: 12px;
+}
+
+.card_horario_missa h3 {
+    margin: 0;
+}
+
+.emoji_igreja, .emoji_calendario , .emoji_relogio, .emoji_oracao {
+    margin: 15px auto;
+    padding: 10px 0;
+    width: 40px;
+    border-radius: 100px;
+    background-color: var(--fundo_emojis);
+}
+
+.emoji_igreja::before {
+    content: "⛪";
+}
+
+.emoji_calendario::before {
+    content: "📅";
+}
+
+.emoji_relogio::before {
+    content: "⏰";
+}
+
+.emoji_oracao::before {
+    content: "🙏";
+}
+
+.texto_contato {
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.forms_contato {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    border: solid 1px var(--cor_secundaria);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.campo_divisao {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+    border: solid 1px var(--cor_secundaria);
+    border-radius: 5px;
+    color: var(--textos_secundarios);
+}
+
+.campo {
+    width: 47%;
+    margin: 10px;
+}
+
+.campo_botao {
+    width: 40%;
+    margin: 10px;
+    margin: 30px auto 10px auto;
+}
+
+button {
+    background-color: var(--cor_secundaria);
+    color: var(--fundo_principal);
+    padding: 7px 0;
+    border-radius: 10px;
+    border: solid 1px var(--cor_secundaria);
+    font-size: 17px;
+    width: 100%;
+}
+
+    
+    .contato_botao:hover {
+        background-color: var(--fundo_principal);
+        color: var(--cor_secundaria);
+    }
