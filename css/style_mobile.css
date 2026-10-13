@@ -102,8 +102,8 @@
     }
 
     .texto_sobre_nos {
-        width: 95%;
-        padding: 0;
+        width: 90%;
+        padding: 10px;
         margin: 10px;
     }
 
@@ -117,7 +117,7 @@
     }
 
     .card_musica, .card_saude, .card_liturgia {
-        width: 50%;
+        width: 70%;
         margin:  auto;
         max-height: 320px;
         max-width: 400px;
@@ -184,5 +184,9 @@
 
     .forms_contato {
         padding: 10px;
+    }
+
+    .banner {
+        max-height: 500px;
     }
 }
