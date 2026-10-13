@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_tablet.css">
+    <link rel="stylesheet" href="css/style_tablet.css"> 
+    <link rel="stylesheet" href="css/style_mobile.css">   
     <meta 
         name="description" 
         content="Paróquia Nossa Senhora dos Pobres, no Butantã. Confira horários de missas, pastorais, eventos e informações da comunidade.">
     <title>Paróquia Nossa Senhora dos Pobres | Butantã</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
 </head>
 <body>
     <header>
             <div class="conteiner_menus">
-                <nav>
-                    <a href="index.html" class="ativo">Início</a>
-                    <a href="#">Confissões</a>
-                    <a href="#">Ministérios</a>
-                    <a href="#">Eventos</a>
-                    <a href="#">Doações</a>
-                    <a href="#">Pastorais</a>
-                </nav>
+                <div class="menu_pc">
+                    <nav>
+                        <a href="index.html" class="ativo">Início</a>
+                        <a href="#">Confissões</a>
+                        <a href="#">Ministérios</a>
+                        <a href="#">Eventos</a>
+                        <a href="#">Doações</a>
+                        <a href="#">Pastorais</a>
+                    </nav>
+                </div>
+                <div class="menu_mobile">
+                    <details class="menu-mobile">
+                        <summary aria-label="Abrir menu">
+                            <i class="fa-solid fa-bars" arial-hidden="true"></i>
+                        </summary>
+
+                        <nav class="nav_mobile" aria-label="Menu Principal">
+                            <a href="index.html" class="ativo">Início</a>
+                            <a href="#">Confissões</a>
+                            <a href="#">Ministérios</a>
+                            <a href="#">Eventos</a>
+                            <a href="#">Doações</a>
+                            <a href="#">Pastorais</a>
+                        </nav>
+                    </details>
+                </div>
                 <div class="botao_contato">
                     <a href="#">Entre em Contato</a>
                 </div>
@@ -31,7 +52,12 @@
 
         <section class="banner">
             <div class="conteiner">
-                <img src="imagens/banner.png">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="imagens/banner_mobile.png">
+
+                    <img src="imagens/banner.png">
+                </picture>
+
                 <div class="texto_banner">
                     <div class="texto_linha">
                         <p class="texto_complemento">BEM-VINDO À</p>

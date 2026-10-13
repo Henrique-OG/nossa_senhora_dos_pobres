@@ -72,6 +72,10 @@ nav a {
     margin-right: 15px ;
 }
 
+.menu_mobile {
+    display: none;
+}
+
 .ativo {
     color: var(--botoes);
 }
@@ -92,7 +96,14 @@ nav a {
     max-height: 700px;
 }
 
+picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .banner img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
