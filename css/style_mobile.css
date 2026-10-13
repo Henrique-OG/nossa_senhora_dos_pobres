@@ -190,4 +190,12 @@
     .banner {
         max-height: 500px;
     }
+
+    .campo_divisao {
+        flex-direction: column;
+    }
+
+    .campo {
+        width: 80%;
+    }
 }
